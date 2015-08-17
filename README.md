@@ -1,13 +1,11 @@
-I. File list
-------------
-smallsh.c			Shell implementation
-readme.txt			This file
+# smallsh
+## I. File list
+smallsh.c&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shell implementation<br />
+readme.txt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This file<br />
 
+## II. Program Instructions
 
-II. Program Instructions
-------------------------
-
-A. Compiling and running the shell program
+#### A. Compiling and running the shell program
 
 This program only requires the compilation of one file, i.e. the file by the 
 name of "smallsh.c". The object file name I will reference throughout this
@@ -30,7 +28,7 @@ in a bash shell:
 This starts the shell which will await user commands to be given. The user is
 prompted with only " : " given as a prompt.
 
-B. Argument structure and limitations
+#### B. Argument structure and limitations
 
 In this document, all user input separated by whitespace is considered an
 "argument". This will be qualified below in II.C, where we'll see that '#' and
@@ -45,7 +43,7 @@ the size constraints, the shell will run the program as specified and return to
 the shell to accept further user commands.
 
 
-C. Built-in functions and special characters
+#### C. Built-in functions and special characters
 
 There are three built in commands in this shell program, namely the "exit",
 "cd", and "status" commands. There are two special characters recognized by the
@@ -86,7 +84,7 @@ that command will cause the shell to wait for that process to finish before
 allowing further user input.
 
 
-D. File manipulation
+#### D. File manipulation
 
 If the user provides either '>' or '<' as arguments, the shell program will
 open the specified output or input file (respectively) and complete the command
@@ -108,7 +106,7 @@ In either case, if the specified file does not exist, the shell creates that
 file and carries on with its action as specified above.
 
 
-E. Signal handling and exiting the shell program
+#### E. Signal handling and exiting the shell program
 
 Only signals given while running a foreground process are acknowledged and 
 delivered. Signals given to the shell program, with or without any background 
@@ -123,12 +121,11 @@ The only defined way of exiting the shell program internally is by use of the
 processes created by the shell currently running and exit the program.
 
 
-III. References
----------------
+## III. References
 
-A. https://oregonstate.instructure.com/courses/1524722/discussion_topics/7567864
-	(login required)
-	Post by user Benjamin Brewster on 7/29/2015 at 10:31 AM PST
+##### A. https://oregonstate.instructure.com/courses/1524722/discussion_topics/7567864
+&nbsp;&nbsp;&nbsp;(login required)<br />
+Post by user Benjamin Brewster on 7/29/2015 at 10:31 AM PST
 
 	1. This resource was used as a reference to understand the function of 
 	ignoring and reacknowledging of signals.
